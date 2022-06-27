@@ -1,30 +1,56 @@
-@import "./utel/var";
-@import "./utel/body";
-@import "./utel/util";
-@import "./utel/hide";
-@import './componets/container';
-@import "./componets/menu";
-@import "./componets/header";
-@import "./componets/logo";
-@import "./utel/button";
-@import "./utel/text";
-@import "./componets/hero";
-@import "./componets/features";
-@import "./componets/work";
-@import "./componets/team";
-@import "./componets/costumer";
-@import "./componets/hooter";
-@import "./componets/form";
-@import "./componets/modal-list";
-@import "./componets/portfolio";
+// утилітарні файли(першими мають бути змінні)
+@import "./utils/variables";
+@import	"./utils/common";
+@import "./utils/mixins";
+
+// файли з базовими налаштуваннями
+@import "./base/normalize";
+@import "./base/fonts";
 
 
+// кастомні компоненти
+
+@import "./components/page-header";
+@import "./components/hero";
+@import "./components/about-company";
+@import "./components/activity";
+@import "./components/team";
+@import "./components/customers";
+@import "./components/footer";
+@import "./components/modal";
+@import "./components/portfolio";
+@import	"./components/logo";
+@import "./components/button";
 
 
+body {
+	background-color: $primary-background-color;
+	color: $primary-text-color;
+	font-family: $primary-text-font;
+	font-weight: 400;
+	font-size: $primary-text-size;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+}
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p {
+	margin: 0;
+	padding: 0;
+}
 
+ul {
+	list-style: none;
+}
 
-
-
-
+a {
+	text-decoration: none;
+}
 
